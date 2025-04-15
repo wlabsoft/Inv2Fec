@@ -32,7 +32,7 @@ def process_files(uploaded_file):
         
         for page in pdf_document:
             # Perform OCR using get_textpage_ocr
-            textpage_ocr = page.get_textpage_ocr(flags=3, language='en', dpi=72, full=False, tessdata=None)
+            textpage_ocr = page.get_textpage_ocr(flags=3, dpi=72, full=False, tessdata=None)
 
             # Extract text from the OCR result
             extracted_text +=  textpage_ocr.extractText()
