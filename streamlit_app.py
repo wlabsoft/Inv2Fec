@@ -1,16 +1,14 @@
-import streamlit as st
-from mistralai import Mistral
-import fitz
-from pathlib import Path
 import os
 import shutil
+from pathlib import Path
+import streamlit as st
+from mistralai import Mistral
 
 OUTPUT_DIR = Path("output")
 
 model = "mistral-large-latest"
 
 client = Mistral(api_key=os.environ['MISTRAL_API_KEY'])
-
 
 def process_files(uploaded_file):
     res = ""
