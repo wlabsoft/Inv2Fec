@@ -69,7 +69,8 @@ def process_files(uploaded_file):
 
         # Get the chat response
         chat_response = client.chat.complete(
-            model="mistral-large-latest",
+            model=model,
+            temperature=0.1,
             messages=messages
         )
 
