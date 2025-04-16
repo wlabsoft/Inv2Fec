@@ -13,7 +13,7 @@ client = Mistral(api_key=os.environ['MISTRAL_API_KEY'])
 def get_fec(invoice):
   chat_response = client.chat.complete(
       model=model,
-      messages=[{"role":"user", "content":"Génère un csv pour les écritures comptables en format FEC pour cette facture: \n"+invoice}]
+      messages=[{"role":"user", "content":"Crée le csv des écritures comptables en format FEC (fichiers des écritures comptables) pour la saisie comptable de cette facture: \n"+invoice}]
   )
 
   return chat_response.choices[0].message.content
