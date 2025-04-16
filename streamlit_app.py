@@ -66,32 +66,32 @@ def main():
                 st.success("✅ Conversion terminée avec succès !")
                 st.write(results)
                 st.write("""### Explications des champs :
-                        - **JournalCode** : Code du journal (ici, "AC" pour Journal d'achat).
-                        - **JournalLib** : Libellé du journal (ici, "Journal d'achat").
-                        - **EcritureNum** : Numéro de l'écriture.
-                        - **EcritureDate** : Date de l'écriture (format AAAAMMJJ).
-                        - **CompteNum** : Numéro du compte.
-                        - **CompteLib** : Libellé du compte.
-                        - **CompAuxNum** : Numéro du compte auxiliaire (optionnel).
-                        - **CompAuxLib** : Libellé du compte auxiliaire (optionnel).
-                        - **PieceRef** : Référence de la pièce justificative (ici, le numéro de la facture).
-                        - **PieceDate** : Date de la pièce justificative (format AAAAMMJJ).
-                        - **EcritureLib** : Libellé de l'écriture.
-                        - **Debit** : Montant débité.
-                        - **Credit** : Montant crédité.
-                        - **EcritureLet** : Lettre de l'écriture (optionnel).
-                        - **DateLet** : Date de la lettre de l'écriture (optionnel).
-                        - **ValidDate** : Date de validation (optionnel).
-                        - **Montantdevise** : Montant en devise (optionnel).
-                        - **Idevise** : Code de la devise (optionnel).
+- **JournalCode** : Code du journal (ici, "AC" pour Journal d'achat).
+- **JournalLib** : Libellé du journal (ici, "Journal d'achat").
+- **EcritureNum** : Numéro de l'écriture.
+- **EcritureDate** : Date de l'écriture (format AAAAMMJJ).
+- **CompteNum** : Numéro du compte.
+- **CompteLib** : Libellé du compte.
+- **CompAuxNum** : Numéro du compte auxiliaire (optionnel).
+- **CompAuxLib** : Libellé du compte auxiliaire (optionnel).
+- **PieceRef** : Référence de la pièce justificative (ici, le numéro de la facture).
+- **PieceDate** : Date de la pièce justificative (format AAAAMMJJ).
+- **EcritureLib** : Libellé de l'écriture.
+- **Debit** : Montant débité.
+- **Credit** : Montant crédité.
+- **EcritureLet** : Lettre de l'écriture (optionnel).
+- **DateLet** : Date de la lettre de l'écriture (optionnel).
+- **ValidDate** : Date de validation (optionnel).
+- **Montantdevise** : Montant en devise (optionnel).
+- **Idevise** : Code de la devise (optionnel).
 
-                        ### Remarques :
+### Remarques :
 
-                        - Assurez-vous que les comptes utilisés correspondent bien à votre plan comptable.
-                        - Si la TVA est applicable, il faudra ajouter une ligne supplémentaire pour enregistrer la TVA déductible.
-                        - Le format FEC peut varier légèrement en fonction des logiciels comptables, mais les champs principaux restent généralement les mêmes.
+- Assurez-vous que les comptes utilisés correspondent bien à votre plan comptable.
+- Si la TVA est applicable, il faudra ajouter une ligne supplémentaire pour enregistrer la TVA déductible.
+- Le format FEC peut varier légèrement en fonction des logiciels comptables, mais les champs principaux restent généralement les mêmes.
 
-                        Ces écritures comptables permettent de refléter correctement la facture dans votre comptabilité.""")
+Ces écritures comptables permettent de refléter correctement la facture dans votre comptabilité.""")
 
 if __name__ == "__main__":
     main()
