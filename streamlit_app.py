@@ -39,6 +39,7 @@ def get_fec(invoice):
 
   chat_response = client.chat.complete(
       model=model,
+      temperature=0.1,
       messages=[{"role":"user", "content":prompt}]
   )
 
